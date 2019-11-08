@@ -35,6 +35,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  # perform_deliveries = true permet d'éteindre (en la passant à false) tout envoi d'email de la part de ton app Rails
   config.action_mailer.delivery_method = :letter_opener
 
   config.action_mailer.perform_deliveries = true
