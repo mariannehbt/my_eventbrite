@@ -31,7 +31,7 @@ puts '*' * 60
 10.times do
 	User.create!(
 		email: Faker::Name.first_name + '.' + Faker::Name.last_name + '@yopmail.com',
-		encrypted_password: 'coucou',
+		password: 'coucou',
 		description: Faker::Lorem.sentence(word_count: 2),
 		first_name: Faker::Name.first_name,
 		last_name: Faker::Name.last_name,
